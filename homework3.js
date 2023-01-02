@@ -3,8 +3,8 @@ const secondIpForSearch = '34.48.240.111';
 
 const fs = require('fs');
 const readStream = fs.createReadStream('./access_tmp.log', 'utf-8');
-const firstWriteStream = fs.createWriteStream(`${firstIpForSearch}`);
-const secondWriteStream = fs.createWriteStream(`${secondIpForSearch}`);
+const firstWriteStream = fs.createWriteStream(`${firstIpForSearch}_requests.log`);
+const secondWriteStream = fs.createWriteStream(`${secondIpForSearch}_requests.log`);
 
 let lineNumber = 0;
 
